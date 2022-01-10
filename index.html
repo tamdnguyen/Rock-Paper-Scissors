@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23f594214d.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <h1>Rock</h1>
+                <h1>Paper</h1>
+                <h1>Scissors</h1>
+            </div>
+            <div class="score-board">
+                <div class="score-board-item score-win">
+                    <h1 class="score-header">Win</h1>
+                    <h1 class="score" id="win">0</h1>
+                </div>
+                <div class="score-board-item score-lose">
+                    <h1 class="score-header">Lose</h1>
+                    <h1 class="score" id="lose">0</h1>
+                </div>
+                <div class="score-board-item score-tie">
+                    <h1 class="score-header">Tie</h1>
+                    <h1 class="score" id="tie">0</h1>
+                </div> 
+            </div>
+        </div>
+        <div class="hands">
+            <div class="hand rock">
+                <button class="button" onclick="clickHand('Rock')"><img src="buttons/Rock.png"></button>
+            </div>
+            <div class="hand paper">
+                <button class="button" onclick="clickHand('Paper')"><img src="buttons/Paper.png"></button>
+            </div>
+            <div class="hand scissors">
+                <button class="button" onclick="clickHand('Scissors')"><img src="buttons/Scissors.png"></button>
+            </div>
+        </div>
+        <div class="contest">
+            <div class="user-hand">
+                <h1>You picked</h1>
+                <div class="hand-container">
+                    <img id="user-button" src="buttons/Paper.png">
+                </div>
+            </div>
+            <div class="result">
+                <div class="decision"><h1 id="game-result">You win!</h1></div>
+                <div class="new-game" onclick="restart()">Play again</div>
+            </div>
+            <div class="comp-hand">
+                <h1>Computer picked</h1>
+                <div class="hand-container">
+                    <img id="computer-button" src="buttons/Scissors.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

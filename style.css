@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(#112a58,#131537);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Header Section Start */
+.header {
+    border: 5px solid white;
+    border-radius: 10px;
+    background: transparent;
+    width: 60%;
+    height: 20%;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin-left: 5%;
+    color: white;
+}
+
+.title h1 {
+    font-size: 30px;
+}
+
+.score-board {
+    margin-right: 2.5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.score-board > div {
+    flex: 1 1 0px;
+}
+.score-board .score-board-item {
+    background-color: white;
+    padding: 2.5%;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7%;
+}
+
+.score-board .score-header {
+    color: rgb(23, 30, 88);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.score-board .score {
+    color: rgb(7, 3, 31);
+    font-size: 40px;
+}
+/* Header Section End */
+
+
+/* Button Section Start */
+.hands {
+    display: flex;
+    width: 60%;
+    height: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hands img {
+    width: 180px;
+    height: auto;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+}
+
+.button:hover {
+    opacity: 1;
+    transition: all 0.25s;
+}
+
+.button:active {
+  transform: translate3d(0px, 2.5%, 0px);
+}
+/* Button Section End */
+
+
+/* Contest Result View Start */
+.contest {
+    width: 80%;
+    display: flex;
+    display: none;
+}
+
+.contest img {
+    width: 200px;
+    height: auto;
+}
+
+.contest > div {
+    flex: 1;
+}
+
+.contest h1{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px 0 50px 0;
+    text-align: center;
+}
+
+.hand-container {
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result h1 {
+    font-size: 50px;
+}
+
+.new-game {
+    background-color: whitesmoke;
+    padding: 15px 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #212452;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 9px #999;
+}
+
+.new-game:hover {
+    background-color: #f0c36f;
+    opacity: 1;
+    transition: all 0.25s;
+}
+  
+.new-game:active {
+    background-color: #f0c36f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+/* Contest Result View End */
